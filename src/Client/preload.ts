@@ -2,7 +2,7 @@
 // It has the same sandbox as a Chrome extension.
 
 const { contextBridge, ipcRenderer } = require('electron')
-
+const change = 'change'
 interface MyAPI {
     changeTitle(name: string): Promise<string>;
 }
