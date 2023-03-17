@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "This is a Electron Test App",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "author": "Julian Warttmann",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^23.1.4",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.0.2",
+    "tslib": "^2.5.0"
+  }
+}
