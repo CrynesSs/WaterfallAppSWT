@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/CSS_Stylesheets/MasterStylesheet.css">
     <link rel="stylesheet" href="src/CSS_Stylesheets/RainbowAnimation.css">
 </head>
+
 <body>
 <div class="navbar">
     <button class="navbar-item-button" id="home-button">Home</button>
@@ -20,7 +21,19 @@
             <a href="#">Link 3</a>
         </div>
     </div>
-    <button class="navbar-item-button">Login</button>
+    <div class="dropdown">
+        <button class="navbar-item-button dropdown-btn">Login</button>
+        <div class="dropdown-content">
+            <form class="login-form" id="login-form">
+                <label for="first">First name:</label><br>
+                <input type="text" id="first" name="first" class="dropdown-input"><br>
+                <label for="last">Last name:</label><br>
+                <input type="text" id="last" name="first" class="dropdown-input"><br>
+                <button type="button" id="submit-button" class="dropdown-input">Submit</button>
+            </form>
+        </div>
+    </div>
+
 </div>
 <script src="dist/Client/renderer.js"></script>
 </body>

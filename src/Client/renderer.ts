@@ -6,4 +6,11 @@
 // Use preload.js to selectively enable features
 // needed in the renderer process.
 
-window.myAPI.sendLoginForm(null)
+const loginField : HTMLFormElement = window.document.getElementById('login-form') as HTMLFormElement
+const submitButton = window.document.getElementById('submit-button')
+submitButton.addEventListener('click',async ()=>{
+    console.log(loginField)
+    await window.myAPI.sendLoginForm(new FormData(loginField))
+    loginField.reset()
+
+})

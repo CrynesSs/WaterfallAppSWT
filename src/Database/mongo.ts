@@ -2,7 +2,7 @@ import {UserModel} from "./Schemas/UserSchema";
 import {config} from "dotenv";
 import * as mongoose from "mongoose";
 import {connection} from "mongoose";
-import {VacationApplicationModel, VacationApplicationSchema} from "./Schemas/VacationApplicationSchema";
+import {VacationApplicationModel} from "./Schemas/VacationApplicationSchema";
 
 export class MongoDBHandler {
     private static mongoDBHandler: MongoDBHandler = null;
@@ -18,7 +18,7 @@ export class MongoDBHandler {
         return MongoDBHandler.mongoDBHandler;
     }
 
-    connect = () => {
+    connect = async () => {
         mongoose.connect(process.env.MONGO_PATH, {
             connectTimeoutMS: 1500
         }).then(() => {

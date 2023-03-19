@@ -13,7 +13,6 @@ body {
     background-position: center center;
     background-size: cover;
     color: white;
-
 }
 
 .navbar-item-button {
@@ -41,7 +40,30 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
+.login-form{
+    background-image: url("../pictures/flipped_horizontal.jpg");
+    color: #fff;
+    animation: rainbow-animation 6000ms infinite linear reverse;
+}
+.dropdown-input{
+    background-image: inherit;
+    opacity: 0.4;
+}
+#submit-button{
+    opacity: 1.0;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    background-image: none;
+}
+#submit-button:hover{
+    animation: rainbow-animation 6000ms infinite linear reverse;
+}
+#submit-button:active{
+    transform: scale(1.2);
+    transition-duration: 50ms;
+    color: deeppink;
+    animation : none;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -56,14 +78,6 @@ body {
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.navbar .dropdown-btn:hover,
-.navbar .dropdown:hover .dropdown-btn {
-    background-color: inherit;
-    padding: 12px 16px;
-    border: none;
-    cursor: pointer;
-}
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -77,8 +91,8 @@ body {
     animation: rainbow-animation 6000ms infinite linear reverse;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown:hover .dropdown-btn {
+    animation: rainbow-animation 6000ms infinite linear reverse;
 }
 
 

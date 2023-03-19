@@ -17,7 +17,7 @@ const mongoose_1 = require("mongoose");
 const VacationApplicationSchema_1 = require("./Schemas/VacationApplicationSchema");
 class MongoDBHandler {
     constructor() {
-        this.connect = () => {
+        this.connect = () => __awaiter(this, void 0, void 0, function* () {
             mongoose.connect(process.env.MONGO_PATH, {
                 connectTimeoutMS: 1500
             }).then(() => {
@@ -26,7 +26,7 @@ class MongoDBHandler {
             }).catch(() => {
                 throw new Error('Unable to open Database,quitting');
             });
-        };
+        });
         this.createDatabaseCollections = () => __awaiter(this, void 0, void 0, function* () {
             yield UserSchema_1.UserModel.createCollection().then(res => console.log(`Created Database Table with Name : ${res.collectionName}`));
             yield VacationApplicationSchema_1.VacationApplicationModel.createCollection().then(res => console.log(`Created Database Table with Name : ${res.collectionName}`));
