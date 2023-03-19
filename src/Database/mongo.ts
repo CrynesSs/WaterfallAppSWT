@@ -2,6 +2,7 @@ import {UserModel} from "./Schemas/UserSchema";
 import {config} from "dotenv";
 import * as mongoose from "mongoose";
 import {connection} from "mongoose";
+import {VacationApplicationModel, VacationApplicationSchema} from "./Schemas/VacationApplicationSchema";
 
 export class MongoDBHandler {
     private static mongoDBHandler: MongoDBHandler = null;
@@ -29,6 +30,7 @@ export class MongoDBHandler {
     }
     createDatabaseCollections = async () => {
         await UserModel.createCollection().then(res => console.log(`Created Database Table with Name : ${res.collectionName}`));
+        await VacationApplicationModel.createCollection().then(res =>console.log(`Created Database Table with Name : ${res.collectionName}`));
     }
     closeConnection = async () =>{
         return connection.close(true)

@@ -1,5 +1,6 @@
 import {ipcMain} from "electron";
 import {TitleEventHandler} from "../PacketHandlers/setTitleEvent";
+import {LoginEventHandler} from "../PacketHandlers/loginEvent";
 
 
 export class IPCHandler{
@@ -9,6 +10,7 @@ export class IPCHandler{
     }
     attachIPC() {
         ipcMain.on('set-title', TitleEventHandler);
+        ipcMain.on('send-login-data',LoginEventHandler)
     }
     static getIPCHandler(){
         if(IPCHandler.ipcHandler == null){

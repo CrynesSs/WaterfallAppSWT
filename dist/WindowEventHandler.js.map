@@ -1,0 +1,1 @@
+{"version":3,"file":"WindowEventHandler.js","sourceRoot":"","sources":["../src/WindowEventHandler.ts"],"names":[],"mappings":";;;AAAA,yFAAsF;AAGtF;IACI;QACI,OAAO,CAAC,GAAG,CAAC,oCAAoC,CAAC,CAAA;IACrD,CAAC;IACa,uBAAI,GAAlB;QACI,MAAM,CAAC,gBAAgB,CAAC,kBAAkB,EAAC,iDAAuB,CAAC,CAAA;IACvE,CAAC;IACL,yBAAC;AAAD,CAAC,AAPD,IAOC;AAPY,gDAAkB"}
