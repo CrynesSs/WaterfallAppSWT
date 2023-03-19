@@ -9,7 +9,7 @@ interface MyAPI {
 }
 contextBridge.exposeInMainWorld('myAPI', {
     changeTitle: (title : String) => ipcRenderer.send('set-title', title),
-    sendLoginForm:(formData : String[]) => ipcRenderer.send('send-login-data',formData)
+    sendLoginForm:(formData : FormData) => ipcRenderer.send('send-login-data',formData)
 })
 
 

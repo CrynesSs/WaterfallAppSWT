@@ -1,1 +1,1 @@
-{"version":3,"file":"loginEvent.js","sourceRoot":"","sources":["../../src/PacketHandlers/loginEvent.ts"],"names":[],"mappings":";;;AAGO,MAAM,iBAAiB,GAAG,CAAC,KAAoB,EAAE,QAAmB,EAAC,EAAE;AAE9E,CAAC,CAAA;AAFY,QAAA,iBAAiB,qBAE7B"}
+{"version":3,"file":"loginEvent.js","sourceRoot":"","sources":["../../src/PacketHandlers/loginEvent.ts"],"names":[],"mappings":";;;AAGO,MAAM,iBAAiB,GAAG,CAAC,KAAoB,EAAE,QAAmB,EAAC,EAAE;IAC1E,OAAO,CAAC,GAAG,CAAC,QAAQ,CAAC,CAAA;AACzB,CAAC,CAAA;AAFY,QAAA,iBAAiB,qBAE7B"}

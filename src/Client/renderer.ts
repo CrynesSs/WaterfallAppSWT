@@ -6,4 +6,4 @@
 // Use preload.js to selectively enable features
 // needed in the renderer process.
 
-
+window.myAPI.sendLoginForm(null)

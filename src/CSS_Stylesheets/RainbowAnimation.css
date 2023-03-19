@@ -1,0 +1,54 @@
+@keyframes rainbow-animation-bg {
+    0% {
+        background-color: #ff0000; /* red */
+    }
+    10% {
+        background-color: #ff7f00; /* orange */
+    }
+    20% {
+        background-color: #ffff00; /* yellow */
+    }
+    30% {
+        background-color: #00ff00; /* green */
+    }
+    40% {
+        background-color: #0000ff; /* blue */
+    }
+    50% {
+        background-color: #4b0082; /* indigo */
+    }
+    60% {
+        background-color: #9400d3; /* violet */
+    }
+    70% {
+        background-color: #ff00ff; /* magenta */
+    }
+    80% {
+        background-color: #00ffff; /* cyan */
+    }
+    90% {
+        background-color: #ffffff; /* white */
+        color: #333;
+    }
+    100% {
+        background-color: #333; /* black */
+        color: #fff;
+    }
+}
+@keyframes rainbow-animation {
+    0% { color: red; }
+    16.67% { color: orange; }
+    33.33% { color: yellow; }
+    50% { color: green; }
+    66.67% { color: blue; }
+    83.33% { color: indigo; }
+    100% { color: violet; }
+}
+@keyframes fade {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}

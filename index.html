@@ -3,15 +3,17 @@
 <html lang="en_us">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Electron App</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="src/CSS_Stylesheets/MasterStylesheet.css">
+    <link rel="stylesheet" href="src/CSS_Stylesheets/RainbowAnimation.css">
 </head>
 <body>
 <div class="navbar">
     <button class="navbar-item-button" id="home-button">Home</button>
-    <button class="navbar-item-button">About</button>
+    <button class="navbar-item-button" id="about-button">About</button>
     <div class="dropdown">
-        <button class="navbar-item dropdown-btn">Dropdown</button>
+        <button class="navbar-item-button dropdown-btn">Dropdown</button>
         <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
@@ -20,16 +22,6 @@
     </div>
     <button class="navbar-item-button">Login</button>
 </div>
-<div>
-    <form id="login-form">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password">
-        <button type="submit">Login</button>
-    </form>
-</div>
-<script src="dist/preload.js"></script>
-<script src="dist/renderer.js"></script>
+<script src="dist/Client/renderer.js"></script>
 </body>
 </html>
